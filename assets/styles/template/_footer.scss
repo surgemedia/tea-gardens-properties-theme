@@ -1,0 +1,22 @@
+#footer{
+	background-color: $green;
+	text-align:center;
+	span{
+		@extend .p1;
+		margin-top: 2em;
+		color:#fff;
+		display:block;
+	}
+	ul{
+		margin-top: 2em;
+		li{
+			@extend .p1;
+			display:inline-block;
+			padding: 0 2em;
+			color:#fff;
+			a{
+				color:#fff;
+			}
+		}
+	}
+}

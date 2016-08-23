@@ -1,0 +1,75 @@
+header.banner{
+	.wrapper{
+		background-color:#000;
+		margin-top: 6.3em;
+		/* position: fixed;
+	  z-index: 3;
+	  background-color: $blue;
+	  width: 100%;
+	  height: 117px;
+	  border-top: 10px solid $blue-dark; */
+	  & + div{
+	  	/* padding-top: 117px; */
+	  }
+		.navbar-brand{
+	/* 	width:auto;
+			float:left;
+			padding:0;
+			padding-top:5px;
+			margin-left: 6em; */
+			background-color: $green-light;
+	    position: absolute;
+	    left: 0;
+	    height: auto;
+	    top: 0;
+	    z-index: 1;
+	    padding: 2em 1em;
+			img{
+	/* 			width:auto;
+				height:95px; */
+			}
+		}
+		.nav-primary{
+			display: inline-block;
+    	margin-left: 34em;
+    	ul{
+    		li{
+    			a{
+    				@extend .h5;
+    				color:#fff;
+    				text-transform: uppercase;
+    				padding: 1.5em 2em;
+    				&:hover,&:focus{
+    					background-color:$green;
+    					/* color:$green; */
+    				}
+    			}
+    		}
+    	}
+		}
+		.media{
+			position: absolute;
+    	right: 1em;
+	    top: 48px;
+	    ul{
+	    	li{
+	    		a{
+	    			@extend .p3;
+	    			color:#000;
+	    			text-transform: uppercase;
+	    			margin: 0 2em;
+	    		}
+	    	}
+	    }
+		}
+		/* .navbar-telephone{
+			@extend .p5;
+			margin-right: 4em;
+			float:right;
+			color:#fff;
+			padding-top: 37px;
+		} */
+
+	}
+
+}

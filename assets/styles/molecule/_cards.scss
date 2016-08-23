@@ -1,0 +1,87 @@
+.card{
+	display:inline-block;
+	float:none;
+	text-align:center;	
+	img{
+
+	}
+	hgroup{
+		h6{
+
+		}
+		h1{
+
+		}
+	}
+	p{
+		
+		img{
+			@extend .img-responsive;
+		}
+	}
+	.button-list{
+
+	}
+
+	.btn{
+		@include button($green-light,#fff,#fff,$green-light);
+		@extend .h5;
+		min-width:180px;
+		height: 50px;
+		margin-top: 2em;
+	}
+
+  &.default{
+  	img{
+
+		}
+		hgroup{
+			h6{
+
+			}
+			h1{
+
+			}
+		}
+		p{
+			font-size: 1.6em;
+		}
+		.button-list{
+
+		}
+  }
+	&.style-1{
+		background-color: #fff;
+    width: 100%;
+    padding: 5em 0;
+		.wrapper{
+			@extend .container;
+			img{
+			}
+			hgroup{
+				
+				h6{
+				}
+				h1{
+					@extend .h1;
+    			margin-bottom: 1em;
+				}
+			}
+			p{
+
+			}
+		}
+	}
+
+	&.style-2{
+		.wrapper{
+			@extend .container;
+		}
+	}
+
+	&.style-3{}
+	
+	&.style-4{}
+	
+	&.style-5{}
+}
